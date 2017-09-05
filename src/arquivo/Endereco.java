@@ -12,6 +12,10 @@ public class Endereco {
     private String estado;
     private String sigla;
     private String cep;
+    
+    public Long tamanho_linha(){
+    	return 300L;
+    }
  
     public void leEndereco(DataInput din) throws IOException
     {
