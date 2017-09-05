@@ -9,13 +9,23 @@ public class Main {
 	public static void main(String[] args) throws Exception 
 	{	
 
-
+		//<!>Acessando o arquivo<!>
 		RandomAccessFile f = new RandomAccessFile("cep_ordenado.dat", "rw");
+		
+		//<!>Criando o Objeto Endereço<!>
 		Endereco endereco = new Endereco();
 		Scanner scanner = new Scanner(System.in);
+		
+		
 		String endereco_CEP, x, aux;    
+		
+		//<!>Primeira Posição do Arquivo<!>
 		long inicio = 0;
+		
+		//<!>Última Posição<!>
 		long fim =  (f.length() / endereco.tamanho_linha());
+		
+		
 		long meio, achou;
 
 		//System.out.println(fim);
@@ -27,7 +37,8 @@ public class Main {
 		System.out.println("CEP procurado: " + x);
 		System.out.println("Efetuando a busca");
 
-		//Busca Binária cortando de metade em metade
+		
+		//Iniciando a Busca Binária
 		while (inicio <= fim)
 		{
 			meio = (inicio + fim) / 2;
@@ -52,7 +63,7 @@ public class Main {
 			} 
 		}
 
-		//Informações recuperadas do CEP buscado
+		//Imprimindo os Valores encontrados
 		System.out.println("Logradouro: " + endereco.getLogradouro());
 		System.out.println("Bairro: " + endereco.getBairro());
 		System.out.println("Cidade: " + endereco.getCidade());
