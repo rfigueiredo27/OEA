@@ -1,4 +1,4 @@
-package arquivo;
+package buscaBinaria;
 
 import java.io.DataInput;
 import java.io.IOException;
