@@ -1,1 +1,15 @@
-Implementação do Algoritmo de Huffman em Java.
+﻿Implementação do Algoritmo de Huffman em Java.
+
+O trabalho final tem por objetivo realizar as seguintes etapas:
+
+1º Entrar com uma palavra, texto ou conjunto de caracteres;
+1º Efetuar a codificação dos símbolos;
+3º Efetuar a compactação desses símbolos;
+3º Efetuar a decodificação dos símbolos.
+4º Gerar a tabela com os símbolos, quantas vezes aparecem e seu respectivo código Huffman; 
+5º Gerar os códigos compactados e decodificados;
+
+Obs: Foi utilizado um ambiente web que possui 2 etapas:
+
+1º Index.jsp: Formulário com uma textarea para entrar com o texto
+2º Huffman.jsp: Resultado do Algoritmo de Huffman, com tabela de símbolos, frequência e repetições, código de compactação e código de descompactação.
